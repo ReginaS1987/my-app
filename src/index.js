@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
+
 import './index.css';
 import App from './App';
+import {Button} from './App';
+
 
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<App/>
+    <StrictMode>
+    <App/>
+    <Button/>
+    </StrictMode>,
 );
 
